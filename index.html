@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MindBlog — блог про програмування, технології та розвиток.">
+    <title>MindBlog — Ідеї, що рухають уперед</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/app.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container navbar">
+            <a href="#" class="brand">
+                <span class="brand-symbol">✳</span>
+                mindblog<span class="brand-dot">.</span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#articles">Статті</a>
+                <a href="#about">Про проєкт</a>
+                <a href="#newsletter">Контакти</a>
+            </nav>
+
+            <a href="#articles" class="nav-button">
+                Читати блог <span>↗</span>
+            </a>
+
+            <button
+                id="menuToggle"
+                class="menu-toggle"
+                type="button"
+                aria-label="Відкрити меню"
+                aria-expanded="false"
+            >☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="eyebrow">
+                        <span class="eyebrow-line"></span>
+                        ПРОГРАМУВАННЯ · ІДЕЇ · РОЗВИТОК
+                    </div>
+
+                    <h1>
+                        Ідеї, які<br>
+                        допомагають<br>
+                        <em>рухатись уперед.</em>
+                    </h1>
+
+                    <p class="hero-description">
+                        Простими словами про складні технології,
+                        корисні інструменти й маленькі кроки
+                        до великих результатів.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="primary-button" href="#articles">
+                            Читати статті <span>↗</span>
+                        </a>
+
+                        <span class="hero-hint">
+                            Знання починаються з цікавості
+                        </span>
+                    </div>
+
+                    <div class="hero-meta">
+                        <div>
+                            <strong>06</strong>
+                            <span>Статей у блозі</span>
+                        </div>
+
+                        <div class="meta-divider"></div>
+
+                        <div>
+                            <strong>05</strong>
+                            <span>Напрямів розвитку</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrap">
+                    <img
+                        class="hero-image"
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1400&q=85"
+                        alt="Робоче місце програміста"
+                    >
+
+                    <div class="image-badge">
+                        <span class="badge-icon">✳</span>
+                        <div>
+                            <strong>Keep learning.</strong>
+                            <small>One step at a time.</small>
+                        </div>
+                    </div>
+
+                    <div class="image-label">
+                        NOTES ON THE DIGITAL WORLD / 2026
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="articles" class="articles-section">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <span class="section-kicker">
+                            01 / БІБЛІОТЕКА ІДЕЙ
+                        </span>
+                        <h2>Останні <em>публікації.</em></h2>
+                    </div>
+
+                    <p>
+                        Досліджуй нове, зберігай цікаві думки
+                        та знаходь ідеї для власних проєктів.
+                    </p>
+                </div>
+
+                <div class="filters">
+                    <div class="categories" id="categories">
+                        <button class="category active" data-category="all">
+                            Усі статті
+                        </button>
+
+                        <button class="category" data-category="python">
+                            Python
+                        </button>
+
+                        <button class="category" data-category="backend">
+                            Backend
+                        </button>
+
+                        <button class="category" data-category="productivity">
+                            Продуктивність
+                        </button>
+
+                        <button class="category" data-category="tools">
+                            Інструменти
+                        </button>
+
+                        <button class="category" data-category="career">
+                            Кар'єра
+                        </button>
+                    </div>
+
+                    <label class="search-box">
+                        <span>⌕</span>
+                        <input
+                            type="search"
+                            id="search"
+                            placeholder="Пошук статей..."
+                            aria-label="Пошук статей"
+                        >
+                    </label>
+                </div>
+
+                <div class="results-heading">
+                    <span id="resultCount">Завантажуємо статті...</span>
+                    <span>THE MINDBLOG JOURNAL</span>
+                </div>
+
+                <div id="articlesGrid" class="articles-grid">
+                    <div class="loading">
+                        Завантаження публікацій...
+                    </div>
+                </div>
+
+                <div id="pagination" class="pagination"></div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container about-grid">
+                <div class="about-visual">
+                    <span class="visual-top">LEARN / BUILD / GROW</span>
+                    <div class="visual-symbol">✳</div>
+                    <span class="visual-bottom">
+                        THE ART OF GETTING BETTER EVERY DAY
+                    </span>
+                </div>
+
+                <div class="about-content">
+                    <span class="section-kicker">
+                        02 / ПРО ПРОЄКТ
+                    </span>
+
+                    <h2>
+                        Навчання —<br>
+                        це <em>подорож.</em>
+                    </h2>
+
+                    <p>
+                        MindBlog — демонстраційний блог про технології,
+                        програмування та особистий розвиток.
+                    </p>
+
+                    <p>
+                        Проєкт створений як портфоліо веброзробника:
+                        FastAPI відповідає за API, SQLite зберігає
+                        статті та коментарі, а інтерфейс працює
+                        на HTML, CSS і JavaScript.
+                    </p>
+
+                    <a href="#articles" class="text-link">
+                        Дослідити статті <span>↗</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter" class="newsletter-section">
+            <div class="container newsletter-inner">
+                <div>
+                    <span class="section-kicker light">
+                        03 / ЗАЛИШАЙСЯ НА ЗВ'ЯЗКУ
+                    </span>
+
+                    <h2>
+                        Гарні ідеї<br>
+                        <em>варто ділитися.</em>
+                    </h2>
+
+                    <p>
+                        Знайшов цікаву статтю?
+                        Поділися нею з друзями або збережи
+                        посилання на блог.
+                    </p>
+                </div>
+
+                <button id="shareButton" class="share-button">
+                    Поділитися блогом <span>↗</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="#" class="brand">
+                <span class="brand-symbol">✳</span>
+                mindblog<span class="brand-dot">.</span>
+            </a>
+
+            <span>Зроблено з цікавістю до нового.</span>
+
+            <span>© 2026 MindBlog · Portfolio demo</span>
+        </div>
+    </footer>
+
+    <dialog id="articleDialog" class="article-dialog">
+        <button
+            class="dialog-close"
+            id="closeDialog"
+            type="button"
+            aria-label="Закрити статтю"
+        >×</button>
+
+        <div id="articleContent"></div>
+    </dialog>
+
+    <div
+        id="toast"
+        class="toast"
+        role="status"
+        aria-live="polite"
+    ></div>
+</body>
+</html>
